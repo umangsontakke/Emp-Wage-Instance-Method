@@ -40,7 +40,7 @@ public class EmpWageInstance {
 		final int isPartTime = 2;
 		int empHrs = 0;
 
-//get random value
+        //get random value
 		final double randomValue = Math.floor(Math.random() * 10) % 3;
 
 		switch ((int) randomValue) {
