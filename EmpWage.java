@@ -28,7 +28,7 @@ public class EmpWageInstance {
 		int totalWage = 0;
 		int totalEmpHrs = 0;
 		int totalWorkingDays = 0;
-		while (totalEmpHrs < maxHrsInMonth && totalWorkingDays) {
+		while (totalEmpHrs < maxHrsInMonth && totalWorkingDays<numOfWorkingDays) {
 			totalWorkingDays++;
 
 			final int empHrs = getEmpHrs();
