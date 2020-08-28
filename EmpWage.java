@@ -1,8 +1,12 @@
 public class EmpWageInstance {
+	
+	//instance variables
+
 	private int empRate;
 	private int numOfWorkingDays;
 	private int maxHrsInMonth;
 
+	//instance method
 	public EmpWageInstance(final int empRate, final int numOfWorkingDays, final int maxHrsInMonth) {
 		this.empRate = empRate;
 		this.numOfWorkingDays = numOfWorkingDays;
@@ -19,6 +23,8 @@ public class EmpWageInstance {
 	 */
 
 	public void caldailyEmpWage() {
+		
+		//local variables
 		int totalWage = 0;
 		int totalEmpHrs = 0;
 		int totalWorkingDays = 0;
@@ -36,11 +42,14 @@ public class EmpWageInstance {
 
 	/* @return employee hrs */
 	public int getEmpHrs() {
+		
+		//local variables
+		
 		final int isFullTime = 1;
 		final int isPartTime = 2;
 		int empHrs = 0;
 
-        //get random value
+                //get random value
 		final double randomValue = Math.floor(Math.random() * 10) % 3;
 
 		switch ((int) randomValue) {
